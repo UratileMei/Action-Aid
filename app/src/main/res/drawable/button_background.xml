@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+            <solid android:color="#40000000" /> <!-- Transparent black for shadow -->
+        </shape>
+    </item>
+
+    <!-- Button Background Layer with Offset for Shadow Effect -->
+    <item android:left="4dp" android:top="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#EA1B1B"
+                android:endColor="#001201"
+                android:angle="45"/>
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "544770652474",
+    "project_id": "action-aid-857a5",
+    "storage_bucket": "action-aid-857a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544770652474:android:a8237a0aadf71bb250f803",
+        "android_client_info": {
+          "package_name": "com.actionorg.actionaid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtsU5TCC1AdjA8IH0zCbYR_9_WxVmLj4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
