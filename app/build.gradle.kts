@@ -39,6 +39,8 @@ android {
 dependencies {
     implementation("com.google.ai.client.generativeai:generativeai:0.7.0")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    testImplementation ("org.mockito:mockito-core:4.0.0")
+    testImplementation ("androidx.test:core:1.5.0")
 
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.6.1")

@@ -62,5 +62,9 @@ class AboutUsActivity : AppCompatActivity() {
             val donIntent = Intent(this, DonateActivity::class.java)
             startActivity(donIntent)
         }
+        algorithm()
+    }
+    private fun algorithm(){
+     for ( ){}
     }
 }

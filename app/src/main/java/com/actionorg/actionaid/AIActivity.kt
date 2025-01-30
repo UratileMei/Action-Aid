@@ -28,10 +28,10 @@ class AIActivity : AppCompatActivity() {
     lateinit var about_img : ImageView
     //
     private lateinit var chatAdapter: ChatAdapter
-    private val chatMessages = mutableListOf<ChatMessage>()
+    val chatMessages = mutableListOf<ChatMessage>()
     private lateinit var chatRecyclerView: RecyclerView
-    private lateinit var sendButton: Button
-    private lateinit var promptEditText: EditText
+    lateinit var sendButton: Button
+    lateinit var promptEditText: EditText
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,17 +59,17 @@ class AIActivity : AppCompatActivity() {
 
         }
     }
-    private fun addMessage(text: String, isUser: Boolean) {
+    fun addMessage(text: String, isUser: Boolean) {
         val chatMessage = ChatMessage(text, isUser)
         chatAdapter.addMessage(chatMessage)
         chatRecyclerView.scrollToPosition(chatMessages.size - 1) // Auto-scroll to the latest message
     }
 
-    private fun geminiAIAPI(view: View) {
+    fun geminiAIAPI(view: View) {
         val promptTextView = findViewById<EditText>(R.id.promptEditText)
         val generativeModel = GenerativeModel(
             modelName = "gemini-1.5-flash",
-            apiKey = "API_Key",
+            apiKey = "YOUR_API_KEY",
 
             )
 
